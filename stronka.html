@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kalkulator</h1>
+        </header>
+        <main>
+            <script>
+                function kalk() {
+                    let liczba1 = parseFloat(prompt('wpisz pierwsza liczbe: '));
+                    let znak = prompt('podaj znak równania: ');
+                    let liczba2 = parseFloat(prompt('podaj druga liczbe: '));
+                    let wynik;
+
+                    switch(znak){
+                        case "+":
+                            wynik = liczba1 + liczba2;
+                        case "-":
+                            wynik = liczba1 - liczba2;
+                        case "*":
+                            wynik = liczba1 * liczba2;
+                        case "/":
+                            if (liczba2 == 0){
+                                alert("niedziela");
+                            }
+                            
+                            else {
+                                wynik = liczba1 / liczba2;
+                            }
+                    break;
+
+                            
+                    }
+                alert(wynik)
+                }
+                kalk()
+            </script>
+
+        </main>
+        <footer>
+            <p>&copy; Me XXI c.</p>
+        </footer>
+    </div>
+</body>
+</html>
